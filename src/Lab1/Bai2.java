@@ -1,20 +1,20 @@
-package javacore;
+package Lab1;
 
 import java.util.Scanner;
 
-public class Bai2Lab1 {
+public class Bai2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Enter length : ");
-		Double length = sc.nextDouble();
+		double length = sc.nextDouble();
 
 		System.out.println("Enter width: ");
-		Double width = sc.nextDouble();
+		double width = sc.nextDouble();
 
-		Double perimeter = (length + width) * 2;
-		Double area = length * width;
-		Double edgeMin = Math.min(length, width);
+		double perimeter = (length + width) * 2;
+		double area = length * width;
+		double edgeMin = Math.min(length, width);
 
 		System.out.printf("Perimeter = " + perimeter + "\n" + "Area = " + area + "\n" + "Edge min = " + edgeMin);
 	}
