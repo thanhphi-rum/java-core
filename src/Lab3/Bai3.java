@@ -21,23 +21,21 @@ public class Bai3 {
 		}
 
 		System.out.print("Mảng A vừa nhập: ");
-		for (int i : a) {
-			System.out.printf("%d ", i);
-		}
+		System.out.print(Arrays.toString(a));
 
 		System.out.printf("\nMảng đã sắp xếp (tăng dần): ");
 		Arrays.sort(a);
 		System.out.println(Arrays.toString(a));
 
-		int max = a[0];
-		int min = a[0];
+//		int max = a[0];
+//		int min = a[0];
+//
+//		for (int i = 1; i < a.length; i++) {
+//			max = Math.max(max, a[i]);
+//			min = Math.min(min, a[i]);
+//		}
 
-		for (int i = 1; i < a.length; i++) {
-			max = Math.max(max, a[i]);
-			min = Math.min(min, a[i]);
-		}
-
-		System.out.println("Giá trị lớn nhất là: " + max);
-		System.out.println("Giá trị nhỏ nhất là: " + min);
+		System.out.println("Giá trị lớn nhất là: " + a[a.length - 1]);
+		System.out.println("Giá trị nhỏ nhất là: " + a[0]);
 	}
 }
